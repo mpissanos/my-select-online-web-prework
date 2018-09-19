@@ -14,3 +14,10 @@ def my_select(array)
 #       num.even?
 #     end
 #   end
+
+  def my_select
+    return to_enum unless block_given?
+    array = []
+    to_a.my_each { |n| array << n if yield(n) }
+    array
+  end
