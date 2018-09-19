@@ -1,9 +1,6 @@
 def my_select(array)
- i = 0
- even_arr = []
-   while i < array.length
-    yield (array[i])
-   i = i + 1
+ new_arr = []
+  array.each do { |i| new_arr << i if yield(i) }
   end
   even_arr
  end
@@ -15,9 +12,3 @@ def my_select(array)
 #     end
 #   end
 
-  def my_select
-    return to_enum unless block_given?
-    array = []
-    to_a.my_each { |n| array << n if yield(n) }
-    array
-  end
