@@ -8,6 +8,7 @@ def my_select(array)
     i = i + 1
   end
   even_arr
+ end
 end
 
 
