@@ -5,5 +5,6 @@ def my_select(array)
     new_arr.push( yield array[i])
     i = i + 1
   end
+  new_arr
 end
 
