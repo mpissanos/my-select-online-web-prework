@@ -5,7 +5,7 @@ def my_select(array)
    yield array[i]
    i = i + 1
    if array[i] == true
-     even_arr << array[i]
+     even_arr << i
   end
   even_arr
  end
