@@ -8,3 +8,8 @@ def my_select(array)
   even_arr
 end
 
+
+(my_select(nums) do |num|
+      num.even?
+    end
+  end
