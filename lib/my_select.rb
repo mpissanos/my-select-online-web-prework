@@ -2,7 +2,7 @@ def my_select(array)
  new_arr = []
   array.each do { |i| new_arr << i if yield(i) }
   end
-  even_arr
+  new_arr
  end
 
 
