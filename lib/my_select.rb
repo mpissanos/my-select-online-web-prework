@@ -3,9 +3,9 @@ def my_select(array)
  even_arr = []
   while i < array.length
    yield array[i]
-   if i == true
-     even_arr << i
-    i = i + 1
+   i = i + 1
+   if array[i] == true
+     even_arr << array[i]
   end
   even_arr
  end
