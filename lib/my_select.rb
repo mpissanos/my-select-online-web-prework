@@ -1,10 +1,9 @@
 def my_select(array)
-
-  i = 0
- 
-  while i < array.length
-    yield array[i]
-    i = i + 1
-  end
+  new_arr = [] 
+  array.each do |i|
+    new_arr << i if yield(i) == true
+   end
+  new_arr
 end
+
 
