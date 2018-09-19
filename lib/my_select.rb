@@ -4,7 +4,7 @@ def my_select(array)
   while i < array.length
    yield array[i]
    i = i + 1
-   if array[i] == true
+   if i == true
      even_arr << i
   end
   even_arr
